@@ -1,31 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Protest+Guerrilla&display=swap');
+/* Import fonts from Google Fonts for use in the webpage */
 
+/* Applies styles to all elements */
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Removes default margins */
+    padding: 0; /* Removes default padding */
+    box-sizing: border-box; /* Ensures padding and border do not affect element size */
 }
 
 body{
-    background-color: #e9e9e9;
+    background-color: #e9e9e9; /* Sets background color for the entire page */
 }
 
 .header{
-    display: flex;
-    margin-top: 500px;
-    flex-direction: column;
+    display: flex; /* Makes the header a flex container */
+    margin-top: 500px; /* Adds margin to the top of the header */
+    flex-direction: column; /* Arranges child elements in a column */
 }
 
 .logo img{
-    justify-content: center;
-    width: 200px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
-    cursor: pointer;
-}   
+    justify-content: center; /* Centers the logo horizontally */
+    width: 200px; /* Sets the width of the logo */
+    height: auto; /* Keeps the original aspect ratio */
+    display: block; /* Displays the image as a block element */
+    margin: 0 auto; /* Centers the logo within its container */
+    margin-top: 50px; /* Adds margin to the top of the logo */
+    cursor: pointer; /* Changes cursor to pointer when hovered */
+}
 
 nav ul{
     display: flex;                             /* Used flexbox for layout */
@@ -53,16 +55,16 @@ nav ul a {
 }
 
 .main-content h1 {
-    font-size: 100px;
-    font-family: "Protest Guerrilla", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 100px; /* Sets the size of the main heading text */
+    font-family: "Protest Guerrilla", sans-serif; /* Sets the font style for the main heading */
+    font-weight: 400; /* Sets the weight (thickness) of the text */
+    font-style: normal; /* Ensures the text is not italic */
 }
 
 .main-content h2 {
-    font-family: "Protest Guerrilla", sans-serif;
-    font-size: 36px;
-    font-weight: 200;
+    font-family: "Protest Guerrilla", sans-serif; /* Sets the font style for the subheading */
+    font-size: 36px; /* Sets the size of the subheading text */
+    font-weight: 200; /* Sets the weight (thickness) of the subheading text */
 }
 
 .main-content p{
@@ -72,17 +74,17 @@ nav ul a {
 }
 
 .para p{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    font-size: 22px;
+    display: grid; /* Arranges paragraph content using a grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates columns that adjust automatically, each with a minimum width of 300px */
+    gap: 20px; /* Adds a 20px gap between columns */
+    font-size: 22px; /* Sets the font size of the text */
 }
 
 .article-content {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin-top: 20px;
+    display: flex; /* Makes the container a flexbox */
+    flex-direction: row; /* Arranges child elements in a horizontal row */
+    gap: 20px; /* Adds a 20px gap between elements */
+    margin-top: 20px; /* Adds a 20px margin at the top */
 }
 
 .article-content .column {
@@ -113,39 +115,39 @@ nav ul a {
 }
 
 .side-images {
-    grid-column: 2 / 3; /* Smaller images go into the second column */
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
-    gap: 0px;
-    height: 450px;
-    width: 456px;
+    grid-column: 2 / 3; /* Places the smaller images in the second column of the grid */
+    display: grid; /* Uses grid layout for arranging content */
+    grid-template-columns: 1fr 2fr; /* Defines two columns, with the second being twice as wide as the first */
+    grid-template-rows: 1fr 2fr; /* Defines two rows, with the second being twice as tall as the first */
+    gap: 0px; /* No space between the grid items */
+    height: 450px; /* Sets the height of the container */
+    width: 456px; /* Sets the width of the container */
 }
 
-img {
+img {   /* Adjusting images */
     width: 100%;
     height: 100%;
     object-fit:cover;
 }
 
 .side-images div {
-    background-color: #eee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #eee; /* Sets a light gray background color */
+    display: flex; /* Uses flexbox for child elements */
+    justify-content: center; /* Centers child elements horizontally */
+    align-items: center; /* Centers child elements vertically */
 }
 
 .author h2{
-    margin-left: 220px;
-    margin-top: 50px;
+    margin-left: 220px; /* Adds margin to the left of the heading */
+    margin-top: 50px; /* Adds margin to the top of the heading */
 }
 
 .author p{
-    line-height: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 20px;
-    padding-right: 200px;
+    line-height: 1; /* Sets the space between lines of text */
+    display: grid; /* Arranges paragraph content using a grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); /* Creates columns that adjust automatically, each with a minimum width of 500px */
+    gap: 20px; /* Adds a 20px gap between grid items */
+    padding-right: 200px; /* Adds padding to the right side */
 }
 
 .author-image img{
@@ -158,33 +160,34 @@ img {
 }
 
 .footer{
-    text-align: center;
-    cursor: pointer;
-    padding: 2px 60px 10px 60px;
-    background-color: #14181d;
-    color: white;
-    margin-left: -50px;
-    margin-right: 10px;
-    width: 111.3%;
-    margin-bottom: -20px;
+    text-align: center; /* Centers the text inside the footer */
+    cursor: pointer; /* Changes the cursor to a pointer when hovered */
+    padding: 2px 60px 10px 60px; /* Adds padding to the top, right, bottom, and left sides */
+    background-color: #14181d; /* Sets the background color to dark gray/black */
+    color: white; /* Sets the text color to white */
+    margin-left: -50px; /* Shifts the footer 50px to the left */
+    margin-right: 10px; /* Adds a 10px margin to the right side */
+    width: 111.3%; /* Sets the width to slightly more than the normal size */
+    margin-bottom: -20px; /* Shifts the footer upward by 20px */
 }
 
-/* Desktop (1024px and up) */
 @media (min-width: 1024px) {
+    /* This section applies styles when the screen width is 1024px or more */
+
     .header, .main-content {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 50px; /* Adds 50px padding to the left side of header and main content */
+        padding-right: 50px; /* Adds 50px padding to the right side of header and main content */
     }
-    
+
     .logo img {
-        width: 200px;
+        width: 200px; /* Sets the logo width to 200px */
     }
-    
+
     nav ul {
-        gap: 200px;
-        margin-top: 50px;
-        font-size: 18px;
-        margin-bottom: 20px;
+        gap: 200px; /* Adds 200px space between each list item in the navigation */
+        margin-top: 50px; /* Adds 50px margin to the top of the navigation list */
+        font-size: 18px; /* Sets the font size of the navigation links to 18px */
+        margin-bottom: 20px; /* Adds 20px margin to the bottom of the navigation list */
     }
     
     .main-content {
@@ -202,18 +205,18 @@ img {
     }
     
     .article-content {
-        gap: 50px;
+        gap: 50px; /* Adds 50px space between each element in the article content */
     }
     
     .image-section {
-        gap: 0;
-        margin-left: -30px;
+        gap: 0; /* No space between items in the image section */
+        margin-left: -30px; /* Shifts the image section 30px to the left */
     }
     
     .featured-image {
-        height: 500px;
-        width: 500px;
-    }
+        height: 500px; /* Sets the height of the featured image to 500px */
+        width: 500px; /* Sets the width of the featured image to 500px */
+    }    
     
     .side-images div {
         height: 250px;
@@ -237,43 +240,43 @@ img {
 }
 
 /* Tablet (720px-1024px) */
+/* This section applies styles for tablet screens with width between 720px and 1023px */
 @media (min-width: 720px) and (max-width: 1023px) {
 
     .main-content{
-        width: 70%;
-        margin: 50px auto;
+        width: 70%; /* Sets the width of the main content to 70% of the screen */
+        margin: 50px auto; /* Adds 50px margin to the top and bottom, and centers content horizontally */
     }
 
     .logo img {
-        width: 80px;
+        width: 80px; /* Sets the logo width to 80px */
     }
 
     nav ul{
-        gap: 70px;
-        margin-bottom: 30px;
+        gap: 70px; /* Adds 70px space between each list item in the navigation */
+        margin-bottom: 30px; /* Adds 30px margin to the bottom of the navigation list */
     }
 
     .para h1{
-        text-align: center;
-    
+        text-align: center; /* Centers the main heading text */
     }
 
     .para h2{
-        text-align: center;
+        text-align: center; /* Centers the subheading text */
     }
 
     .para p{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
+        display: grid; /* Uses grid layout for the paragraph content */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates columns that adjust automatically, with a minimum width of 300px */
+        gap: 20px; /* Adds 20px gap between grid items */
     }
 
     .main-content h1 {
-        font-size: 20px;
+        font-size: 20px; /* Sets the font size of the main heading to 20px */
     }
     
     .main-content h2 {
-        font-size: 30px;
+        font-size: 30px; /* Sets the font size of the subheading to 30px */
     }
 
     .main-content p{
@@ -294,23 +297,24 @@ img {
     }
 
     .featured-image{
-        display: none;
+        display: none; /* Hides the featured image from view */
     }
 
     .side-images div {
-        height: 268px;
-        width: 266px;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: 1fr 2fr;
-        gap: 0;
-        margin-left: -28px;
+        height: 268px; /* Sets the height of each div inside the side-images container to 268px */
+        width: 266px; /* Sets the width of each div inside the side-images container to 266px */
+        grid-template-columns: 1fr 2fr; /* Defines two columns with the second one being twice as wide as the first */
+        grid-template-rows: 1fr 2fr; /* Defines two rows with the second one being twice as tall as the first */
+        gap: 0; /* No space between items in the grid */
+        margin-left: -28px; /* Shifts the grid items 28px to the left */
     }
 
     .author h2 {
-        text-align: left;
-        margin-left: 30px;
-        margin-top: 115px;
+        text-align: left; /* Aligns the author heading to the left */
+        margin-left: 30px; /* Adds 30px margin to the left side of the heading */
+        margin-top: 115px; /* Adds 115px margin to the top of the heading */
     }
+
 
     .author p {
         display: grid;
@@ -340,34 +344,35 @@ img {
 }
 
 /*Large Mobiles ( 540px-720px ) */
+/* This section applies styles for large mobile screens with width between 540px and 719px */
 @media (min-width: 540px) and (max-width: 719px) {
 
     .main-content {
-        width: 100%;
-        margin: 10px 40px 0px 0px;
+        width: 100%; /* Sets the main content width to 100% of the screen */
+        margin: 10px 40px 0px 0px; /* Adds 10px margin to the top, 40px margin to the right, and no margin to the bottom and left */
     }
 
     .logo img {
-        width: 80px;
+        width: 80px; /* Sets the logo width to 80px */
     }
 
     nav ul{
-        gap: 80px;
-        margin-bottom: 20px;
+        gap: 80px; /* Adds 80px space between each list item in the navigation */
+        margin-bottom: 20px; /* Adds 20px margin to the bottom of the navigation list */
     }
 
     .para h1{
-        text-align: center;
+        text-align: center; /* Centers the main heading text */
     }
 
     .para h2{
-        text-align: center;
+        text-align: center; /* Centers the subheading text */
     }
 
     .para p{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
+        display: grid; /* Uses grid layout for the paragraph content */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates columns that adjust automatically, with a minimum width of 300px */
+        gap: 20px; /* Adds 20px gap between grid items */
     }
 
     .main-content h1 {
@@ -392,28 +397,28 @@ img {
     }
     
     .article-content h2{
-        text-align: center;
+        text-align: center; /* Centers the subheading text inside article content */
     }
 
     .featured-image{
-        display: none;
+        display: none; /* Hides the featured image from view */
     }
 
     .side-images {
-        height: 535px;
-        width: 535px;
-        gap: 0;
-        margin-left: -19px;
-        display: flex;
-        flex-direction: column;
-        
+        height: 535px; /* Sets the height of the side images container to 535px */
+        width: 535px; /* Sets the width of the side images container to 535px */
+        gap: 0; /* No space between items in the side images container */
+        margin-left: -19px; /* Shifts the side images container 19px to the left */
+        display: flex; /* Uses flexbox layout for the side images container */
+        flex-direction: column; /* Arranges the items in the container in a vertical column */
     }
 
     .author h2 {
-        text-align: center;
-        margin-left: 30px;
-        margin-top: 1800px;
+        text-align: center; /* Centers the author heading text */
+        margin-left: 30px; /* Adds 30px margin to the left side of the heading */
+        margin-top: 1800px; /* Adds 1800px margin to the top of the heading (very large space) */
     }
+
 
     .author p {
         display: grid;
@@ -437,22 +442,23 @@ img {
 }
 
 /*Small Mobiles ( 360px-540px ) */
+/* This section applies styles for small mobile screens with width between 360px and 539px */
 @media (min-width: 360px) and (max-width: 539px) {
 
     .main-content {
-        width: 149%;
-        margin: 10px 0px 0px 0px;
+        width: 149%; /* Sets the main content width to 149% of the screen, making it wider than normal */
+        margin: 10px 0px 0px 0px; /* Adds 10px margin to the top, no margin to the right, bottom, or left */
     }
 
     .logo img {
-        width: 80px;
-        margin-right: 40px;
+        width: 80px; /* Sets the logo width to 80px */
+        margin-right: 40px; /* Adds 40px margin to the right side of the logo */
     }
 
     nav ul{
-        gap: 120px;
-        margin-bottom: 20px;
-        margin-left: 220px;
+        gap: 120px; /* Adds 120px space between each list item in the navigation */
+        margin-bottom: 20px; /* Adds 20px margin to the bottom of the navigation list */
+        margin-left: 220px; /* Adds 220px margin to the left side of the navigation list */
     }
 
     .para h1{
@@ -478,35 +484,35 @@ img {
     }
 
     .main-content p{
-        font-size: 16px;
+        font-size: 16px; /* Sets the font size of paragraphs in main content to 16px */
     }
 
     .article-content {
-        flex-direction: column;
-        gap: 0;
+        flex-direction: column; /* Arranges the items in article content in a vertical column */
+        gap: 0; /* No space between items in the article content */
     }
-    
+
     .article-content .column {
-        flex: 1;
+        flex: 1; /* Each column in the article content takes up equal space */
     }
-    
+
     .article-content h2{
-        text-align: center;
+        text-align: center; /* Centers the subheading text inside article content */
     }
 
     .featured-image{
-        display: none;
+        display: none; /* Hides the featured image from view */
     }
 
     .side-images {
-        height: 535px;
-        width: 535px;
-        gap: 0;
-        margin-left: -19px;
-        display: flex;
-        flex-direction: column;
-        
+        height: 535px; /* Sets the height of the side images container to 535px */
+        width: 535px; /* Sets the width of the side images container to 535px */
+        gap: 0; /* No space between items in the side images container */
+        margin-left: -19px; /* Shifts the side images container 19px to the left */
+        display: flex; /* Uses flexbox layout for the side images container */
+        flex-direction: column; /* Arranges the items in the side images container in a vertical column */
     }
+
 
     .author h2 {
         text-align: center;
@@ -530,7 +536,7 @@ img {
     }
 
     .footer {
-        margin-top: 20px;
-        width: 114%;
+        margin-top: 20px; /* Adds 20px space above the footer */
+        width: 114%; /* Makes the footer 114% wide, wider than the normal width */
     }
 }
