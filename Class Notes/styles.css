@@ -1,0 +1,341 @@
+/* Media Queries for Desktop Devices */
+@media (min-width: 1024px) {
+    nav ul {
+        flex-direction: row; /* Horizontal layout for desktop */
+        justify-content: flex-end; /* Align to the right */
+    }
+
+    .article-content {
+        flex-direction: row;}
+}
+
+/* Media Queries for Tablet Devices */
+@media (max-width: 1024px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .article-content {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .column {
+        flex: 1 1 100%; /* Full width columns on smaller screens */
+    }
+
+    .side-images {
+        flex-direction: column; /* Stack side images vertically */
+        align-items: center; /* Center images */
+    }
+
+    .side-images div {
+        margin: 10px 0; /* Space between vertically stacked images */
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1024px) {
+    /* Additional styles for devices between 720px and 1024px */
+    .article-content {
+        flex-direction: row; /* Arrange columns in a row */
+    }
+
+    .column {
+        flex: 1 1 calc(33.33% - 20px); /* Three columns with spacing */
+    }
+
+    .side-images {
+        flex-direction: row; /* Side images in a row */
+    }
+
+    .side-images div {
+        flex: 1; /* Equal width for side images */
+    }
+}
+
+/* Media Queries for Large Mobile Devices */
+@media (max-width: 720px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .article-content {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .column {
+        flex: 1 1 100%; /* Full width columns on smaller screens */
+    }
+
+    .side-images {
+        flex-direction: column; /* Stack side images vertically */
+        align-items: center; /* Center images */
+    }
+
+    .side-images div {
+        margin: 10px 0; /* Space between vertically stacked images */
+    }
+}
+
+@media (min-width: 540px) and (max-width: 720px) {
+    /* Additional styles for devices between 540px and 720px */
+    .article-content {
+        flex-direction: row; /* Arrange columns in a row */
+    }
+
+    .column {
+        flex: 1 1 calc(50% - 20px); /* Two columns with spacing */
+    }
+
+    .side-images {
+        flex-direction: row; /* Side images in a row */
+    }
+
+    .side-images div {
+        flex: 1; /* Equal width for side images */
+    }
+}
+
+/* Media Queries for Small Mobile Devices */
+@media (max-width: 540px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+        align-items: flex-start; /* Align to the left */
+    }
+
+    .article-content {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .column {
+        flex: 1 1 100%; /* Full width columns on smaller screens */
+    }
+
+    .side-images {
+        flex-direction: column; /* Stack side images vertically */
+        align-items: center; /* Center images */
+    }
+
+    .side-images div {
+        margin: 10px 0; /* Space between vertically stacked images */
+    }
+}
+
+
+
+
+/* main codes */
+
+/* Small Mobile (360px-539px) */
+@media (max-width: 539px) {
+    .header .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav {
+        gap: 12px;
+    }
+
+    .main-title {
+        font-size: 24px;
+    }
+
+    .sub-title {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 12px;
+    }
+
+    .albums {
+        flex-direction: column;
+    }
+
+    .albums .featured-album{
+        display: none;
+    }
+
+    .albums .featured-album,
+    .albums .album-covers {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .albums .album-covers .album-cover{
+        width: 100%;
+    }
+
+    .albums .album-cover img{
+        width: 100%;
+    }
+
+    .grid-container {
+        column-count: 1;
+    }
+
+    .grid-container h1{
+        text-align: center;
+    }
+
+    .author-section {
+        flex-direction: column-reverse;
+
+    }
+
+    .profile {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 12px;
+    }
+
+    .text-section {
+        max-width: 100%;
+    }
+
+    .text-section h1 {
+        text-align: center;
+    }
+}
+
+/* Large Mobile (540px-719px) */
+@media (min-width: 540px) and (max-width: 719px) {
+    .header .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav {
+        gap: 20px;
+    }
+
+    .main-title {
+        font-size: 32px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .albums .featured-album{
+        display: none;
+    }
+
+    .albums .featured-album,
+    .albums .album-covers {
+        width: 100%;
+    }
+
+    .albums .featured-album,
+    .albums .album-covers img {
+        height: 100%;
+    }
+
+
+    .grid-container {
+        column-count: 1;
+    }
+
+    .grid-container h1{
+        text-align: center;
+    }
+
+    .profile {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Tablet (720px-1023px) */
+@media (min-width: 720px) and (max-width: 1023px) {
+    .header .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .nav {
+        gap: 30px;
+    }
+
+    .main-title {
+        font-size: 36px;
+    }
+
+    .sub-title {
+        font-size: 22px;
+    }
+
+    .container {
+        padding: 30px;
+    }
+
+    .albums .featured-album{
+        display: none;
+    }
+    
+    .albums .featured-album,
+    .albums .album-covers {
+        width: 100%;
+    }
+
+    .grid-container {
+        column-count: 1;
+    }
+
+    .grid-container h1{
+        text-align: center;
+    }
+
+    .profile {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* Desktop (1024px and up) */
+@media (min-width: 1024px) {
+    .header .logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .nav {
+        gap: 50px;
+    }
+
+    .main-title {
+        font-size: 48px;
+    }
+
+    .sub-title {
+        font-size: 24px;
+    }
+
+    /* .container {
+        padding: 50px;
+    } */
+
+    .content-container .first-paragraph {
+        margin-right: 30px;
+    }
+
+    .albums .featured-album,
+    .albums .album-covers {
+        width: 50%;
+    }
+
+    .grid-container {
+        column-count: 3;
+    }
+
+    .profile {
+        width: 150px;
+        height: 150px;
+    }
+}
