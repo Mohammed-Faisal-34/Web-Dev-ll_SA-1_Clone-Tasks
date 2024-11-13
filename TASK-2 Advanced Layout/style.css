@@ -1,0 +1,1091 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #231651;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: #4dccbd;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 5px 5px 20px 5px #070410;
+}
+
+.logo {
+    font-family: "Lato", sans-serif;
+    font-weight: 450;
+    font-style: normal;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 3em;
+    color: white;
+}
+
+.nav {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    gap: 48px;
+    cursor: pointer;
+    font-size: 22px;
+    color: white;
+    margin-left: -25px;
+}
+
+.search-button {
+    padding: 1px 18px;
+    background-color: #231651;
+    border: 1.3px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: white;
+}
+
+.movie-grid {
+    display: grid;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.featured-movie {
+    display: grid;
+    grid-template-columns: 1fr;
+    background: #070410;
+    box-shadow: 10px 2px 20px 5px #4dccbd;
+    margin-top: 48px;
+    color: white;
+}
+
+.movie-poster {
+    height: 910px;
+    width: 900px;
+}
+
+img {   /* Adjusting images */
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+h1 {
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.movie-description p {
+    display: grid; /* Arranges paragraph content using a grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    font-size: 1.5em;
+    margin-left: 16px;
+    margin-right: 300px;
+}
+
+.movie-description h1 {
+    margin-top: 16px;
+    font-size: 2.5em;
+    margin-left: 16px;
+}
+
+.watch-button {
+    background-color: #eef36a;
+    margin-left: 620px;
+    padding: 48px 60px;
+    position: relative; top: -180px;
+    font-size: 2em;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 2px 20px 2px #ffffff;
+}
+
+.button-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.movie-content {
+    margin-bottom: -150px;
+}
+
+.second-third-posters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 65px;
+}
+
+.movie-card {
+    background: #070410;
+    box-shadow: 10px 2px 20px 5px #4dccbd;
+    width: 415px;
+    height: 920px;
+    color: white;
+}
+
+.second-poster  {
+    height: 415px;
+    width: 415px;
+}
+
+.second-description {
+    margin-top: 16px;
+}
+
+.second-description h1 {
+    font-size: 2.5em;
+    margin-left: 16px;
+}
+
+.second-description p {
+    font-size: 1.5em;
+    margin-left: 16px;
+}
+
+.second-button {
+    background-color: #eef36a;
+    font-size: 2em;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 2px 20px 2px #ffffff;
+    padding: 16px 16px 16px 16px;
+    margin-top: 48px;
+    width: 380px;
+    margin-left: 16px;
+}
+
+.third-poster  {
+    height: 415px;
+    width: 415px;
+}
+
+.third-description {
+    margin-top: 16px;
+}
+
+.third-description h1 {
+    font-size: 2.5em;
+    margin-left: 16px;
+}
+
+.third-description p {
+    font-size: 1.5em;
+    margin-left: 16px;
+}
+
+.third-button {
+    background-color: #eef36a;
+    font-size: 2em;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 2px 20px 2px #ffffff;
+    padding: 16px 16px 16px 16px;
+    margin-top: 48px;
+    width: 380px;
+    margin-left: 16px;
+}
+
+.fourth-card{
+    background: #070410;
+    box-shadow: 10px 2px 20px 5px #4dccbd;
+    width: 900px;
+    height: 430px;
+    color: white;
+}
+
+.fourth-poster {
+    height: 430px;
+    width: 430px;
+}
+
+.fourth-description{
+    margin-left: 456px;
+    margin-top: -410px;
+    margin-right: 16px;
+}
+
+.fourth-description h1 {
+    font-size: 2.5em;
+}
+
+.fourth-description p {
+    font-size: 1.5em;
+}
+
+.fourth-button {
+    padding: 18px 110px;
+    margin-left: 456px;
+    margin-top: 80px;
+    background-color: #eef36a;
+    font-size: 2em;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 2px 20px 2px #ffffff;
+}
+
+.fifth-card{
+    background: #070410;
+    box-shadow: 10px 2px 20px 5px #4dccbd;
+    width: 900px;
+    height: 430px;
+    color: white;
+}
+
+.fifth-poster {
+    height: 430px;
+    width: 430px;
+}
+
+.fifth-description{
+    margin-left: 456px;
+    margin-top: -410px;
+    margin-right: 16px;
+}
+
+.fourth-description h1 {
+    font-size: 2.5em;
+}
+
+.fifth-description p {
+    font-size: 1.5em;
+}
+
+.fifth-button {
+    padding: 18px 110px;
+    margin-left: 456px;
+    margin-top: 65px;
+    background-color: #eef36a;
+    font-size: 2em;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 2px 20px 2px #ffffff;
+}
+
+.sixth-card{
+    background: #070410;
+    box-shadow: 10px 2px 20px 5px #4dccbd;
+    width: 900px;
+    height: 430px;
+    color: white;
+    margin-bottom: 48px;
+}
+
+.sixth-poster {
+    height: 430px;
+    width: 430px;
+}
+
+.sixth-description{
+    margin-left: 456px;
+    margin-top: -410px;
+    margin-right: 16px;
+}
+
+.sixth-description h1 {
+    font-size: 2.5em;
+}
+
+.sixth-description p {
+    font-size: 1.5em;
+}
+
+.sixth-button {
+    padding: 18px 110px;
+    margin-left: 456px;
+    margin-top: 55px;
+    background-color: #eef36a;
+    font-size: 2em;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    box-shadow: 0px 2px 20px 2px #ffffff;
+}
+
+@media (min-width: 1024px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 20px;
+        background-color: #4dccbd;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        box-shadow: 5px 5px 20px 5px #070410;
+    }
+    
+    .logo {
+        font-family: "Lato", sans-serif;
+        font-weight: 450;
+        font-style: normal;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 3em;
+        color: white;
+    }
+    
+    .nav {
+        font-family: "Lato", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        display: flex;
+        gap: 48px;
+        cursor: pointer;
+        font-size: 22px;
+        color: white;
+        margin-left: -25px;
+    }
+    
+    .search-button {
+        padding: 1px 18px;
+        background-color: #231651;
+        border: 1.3px solid black;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 2em;
+        font-family: "Teko", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        color: white;
+    }
+    
+    .movie-grid {
+        display: grid;
+        gap: 20px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .featured-movie {
+        display: grid;
+        grid-template-columns: 1fr;
+        background: #070410;
+        box-shadow: 10px 2px 20px 5px #4dccbd;
+        margin-top: 48px;
+        color: white;
+    }
+    
+    .movie-poster {
+        height: 910px;
+        width: 900px;
+    }
+    
+    img {   /* Adjusting images */
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+    }
+    
+    h1 {
+        font-family: "Teko", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+    }
+    
+    p {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    
+    .movie-description p {
+        display: grid; /* Arranges paragraph content using a grid layout */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        font-size: 1.5em;
+        margin-left: 16px;
+        margin-right: 300px;
+    }
+    
+    .movie-description h1 {
+        margin-top: 16px;
+        font-size: 2.5em;
+        margin-left: 16px;
+    }
+    
+    .watch-button {
+        background-color: #eef36a;
+        margin-left: 620px;
+        padding: 48px 60px;
+        position: relative; top: -180px;
+        font-size: 2em;
+        border-radius: 15px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        box-shadow: 0px 2px 20px 2px #ffffff;
+    }
+    
+    .button-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 1.2;
+    }
+    
+    .movie-content {
+        margin-bottom: -150px;
+    }
+    
+    .second-third-posters {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 65px;
+    }
+    
+    .movie-card {
+        background: #070410;
+        box-shadow: 10px 2px 20px 5px #4dccbd;
+        width: 415px;
+        height: 920px;
+        color: white;
+    }
+    
+    .second-poster  {
+        height: 415px;
+        width: 415px;
+    }
+    
+    .second-description {
+        margin-top: 16px;
+    }
+    
+    .second-description h1 {
+        font-size: 2.5em;
+        margin-left: 16px;
+    }
+    
+    .second-description p {
+        font-size: 1.5em;
+        margin-left: 16px;
+    }
+    
+    .second-button {
+        background-color: #eef36a;
+        font-size: 2em;
+        border-radius: 15px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        box-shadow: 0px 2px 20px 2px #ffffff;
+        padding: 16px 16px 16px 16px;
+        margin-top: 48px;
+        width: 380px;
+        margin-left: 16px;
+    }
+    
+    .third-poster  {
+        height: 415px;
+        width: 415px;
+    }
+    
+    .third-description {
+        margin-top: 16px;
+    }
+    
+    .third-description h1 {
+        font-size: 2.5em;
+        margin-left: 16px;
+    }
+    
+    .third-description p {
+        font-size: 1.5em;
+        margin-left: 16px;
+    }
+    
+    .third-button {
+        background-color: #eef36a;
+        font-size: 2em;
+        border-radius: 15px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        box-shadow: 0px 2px 20px 2px #ffffff;
+        padding: 16px 16px 16px 16px;
+        margin-top: 48px;
+        width: 380px;
+        margin-left: 16px;
+    }
+    
+    .fourth-card{
+        background: #070410;
+        box-shadow: 10px 2px 20px 5px #4dccbd;
+        width: 900px;
+        height: 430px;
+        color: white;
+    }
+    
+    .fourth-poster {
+        height: 430px;
+        width: 430px;
+    }
+    
+    .fourth-description{
+        margin-left: 456px;
+        margin-top: -410px;
+        margin-right: 16px;
+    }
+    
+    .fourth-description h1 {
+        font-size: 2.5em;
+    }
+    
+    .fourth-description p {
+        font-size: 1.5em;
+    }
+    
+    .fourth-button {
+        padding: 18px 110px;
+        margin-left: 456px;
+        margin-top: 80px;
+        background-color: #eef36a;
+        font-size: 2em;
+        border-radius: 15px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        box-shadow: 0px 2px 20px 2px #ffffff;
+    }
+    
+    .fifth-card{
+        background: #070410;
+        box-shadow: 10px 2px 20px 5px #4dccbd;
+        width: 900px;
+        height: 430px;
+        color: white;
+    }
+    
+    .fifth-poster {
+        height: 430px;
+        width: 430px;
+    }
+    
+    .fifth-description{
+        margin-left: 456px;
+        margin-top: -410px;
+        margin-right: 16px;
+    }
+    
+    .fourth-description h1 {
+        font-size: 2.5em;
+    }
+    
+    .fifth-description p {
+        font-size: 1.5em;
+    }
+    
+    .fifth-button {
+        padding: 18px 110px;
+        margin-left: 456px;
+        margin-top: 65px;
+        background-color: #eef36a;
+        font-size: 2em;
+        border-radius: 15px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        box-shadow: 0px 2px 20px 2px #ffffff;
+    }
+    
+    .sixth-card{
+        background: #070410;
+        box-shadow: 10px 2px 20px 5px #4dccbd;
+        width: 900px;
+        height: 430px;
+        color: white;
+        margin-bottom: 48px;
+    }
+    
+    .sixth-poster {
+        height: 430px;
+        width: 430px;
+    }
+    
+    .sixth-description{
+        margin-left: 456px;
+        margin-top: -410px;
+        margin-right: 16px;
+    }
+    
+    .sixth-description h1 {
+        font-size: 2.5em;
+    }
+    
+    .sixth-description p {
+        font-size: 1.5em;
+    }
+    
+    .sixth-button {
+        padding: 18px 110px;
+        margin-left: 456px;
+        margin-top: 55px;
+        background-color: #eef36a;
+        font-size: 2em;
+        border-radius: 15px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        box-shadow: 0px 2px 20px 2px #ffffff;
+    }
+}
+
+
+@media (min-width: 720px) and (max-width: 1023px) {
+    .header{
+        width: 125%;
+    }
+
+    .search-button {
+        padding: 10px 25px;
+        font-size: 2em;
+    }
+
+    .featured-movie {
+        width: 400px;
+        margin-left: 30px;
+        height: 1030px;
+    }
+
+    .movie-poster {
+        height: 400px;
+        width: 400px;
+    }
+
+    .movie-description {
+        margin-right: 150px;
+        margin-left: 16px;
+        margin-top: 0px;
+    }
+
+    .movie-description p {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        font-size: 1.5em;
+    }
+
+    .movie-description h1 {
+        font-size: 2.5em;
+        margin-right: 316px;
+    }
+
+    .watch-button {
+        padding: 16px 55px;
+        margin-top: 350px;
+        margin-left: 25px;
+    }
+
+    .button-text {
+        font-size: 2em;
+    }
+
+    .movie-card {
+        width: 400px;
+        height: 1030px;
+        margin-left: 30px;
+    }
+
+    .movie-card img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .movie-card button {
+        padding: 16px;
+        height: 180px;
+        width: 330px;
+    }
+
+    .second-description {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 0px;
+    }
+
+    .second-description h1 {
+        font-size: 2.5em;
+    }
+
+    .third-description {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 0px;
+    }
+
+    .second-button {
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+
+    .third-button {
+        margin-left: 30px;
+        position: relative; top: -50px;
+    }
+
+    .movie-card span {
+        font-size: 2em;
+    }
+
+    .movie-card:nth-child(2) {
+        margin-left: -30px;
+    }
+
+    .fourth-card {
+        width: 400px;
+        height: 1030px;
+        margin-left: 467px;
+        margin-top: -2100px;
+
+    }
+
+    .fourth-card img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .fourth-description {
+        margin-left: 30px;
+        margin-top: -10px;
+    }
+
+    .fourth-description p {
+        font-size: 1.5em;
+    }
+
+    .fourth-description h1 {
+        font-size: 2.5em;
+    }
+
+    .fourth-button {
+        padding: 16px;
+        height: 185px;
+        width: 340px;
+        margin-left: 30px;
+        margin-top: 140px;
+    }
+
+    .fourth-button span {
+        font-size: 2em;
+    }
+
+    .fifth-card {
+        width: 400px;
+        height: 1030px;
+        margin-left: 30px;
+    }
+
+    .fifth-card img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .fifth-description {
+        margin-left: 30px;
+        margin-top: -10px;
+    }
+
+    .fifth-description p {
+        font-size: 1.5em;
+    }
+
+    .fifth-description h1 {
+        font-size: 2.5em;
+    }
+
+    .fifth-button {
+        padding: 16px;
+        height: 185px;
+        width: 340px;
+        margin-left: 30px;
+        margin-top: 110px;
+    }
+
+    .fifth-button span {
+        font-size: 2em;
+    }
+
+    .sixth-card {
+        width: 400px;
+        height: 1030px;
+        margin-left: 467px;
+        margin-top: -1050px;
+    }
+
+    .sixth-card img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .sixth-description {
+        margin-left: 30px;
+        margin-top: -10px;
+    }
+
+    .sixth-description p {
+        font-size: 1.5em;
+    }
+
+    .sixth-description h1 {
+        font-size: 2.5em;
+    }
+
+    .sixth-button {
+        padding: 16px;
+        height: 185px;
+        width: 340px;
+        margin-left: 30px;
+        margin-top: 90px;
+    }
+
+    .sixth-button span {
+        font-size: 2em;
+    }
+
+    .featured-movie, .movie-card, .fourth-card, .fifth-card, .sixth-card {
+        box-shadow: 10px 5px 20px 1px #4dccbd;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 719px) {
+    .nav {
+        display: none;
+    }
+
+    .header {
+        width: 250%;
+    }
+
+    .logo {
+        font-size: 2em;
+    }
+
+    .search-button {
+        padding: 16px 48px;
+        font-size: 2em;
+    }
+
+    .featured-movie {
+        width: 900px;
+        height: 1300px;
+    }
+
+    .movie-poster {
+        height: 900px;
+        width: 900px;
+    }
+
+    .movie-description {
+        margin-left: 16px;
+        margin-top: 40px;
+    }
+
+    .movie-description p {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        font-size: 1.5em;
+        margin-right: 16px;
+    }
+
+    .movie-description h1 {
+        font-size: 2.5em;
+        margin-right: 316px;
+    }
+
+    .watch-button {
+        padding: 16px 220px;
+        margin-top: 250px;
+        margin-left: 20px;
+    }
+
+    .button-text {
+        font-size: 2em;
+        display: block;
+    }
+
+    .second-third-posters {
+        display: block;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .movie-card {
+        width: 900px;
+        height: 1300px;
+    }
+
+    .movie-card img {
+        height: 900px;
+        width: 900px;
+    }
+
+    .movie-card button {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 30px;
+        width: 840px;
+        margin-top: 60px;
+    }
+
+    .movie-card span {
+        font-size: 2em;
+    }
+
+    .second-description {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 520px;
+    }
+
+    .second-description h1 {
+        font-size: 2.5em;
+    }
+
+    .second-description p {
+        font-size: 1.5em;
+    }
+
+    .movie-card:nth-child(2) {
+        margin-top: 20px;
+    }
+
+    .third-description {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 520px;
+    }
+
+    .third-button {
+        position: relative; top: -80px;
+    }
+
+    .fourth-card {
+        width: 900px;
+        height: 1300px;
+    }
+
+    .fourth-card img {
+        height: 900px;
+        width: 900px;
+    }
+
+    .fourth-description {
+        margin-left: 30px;
+        margin-top: 510px;
+    }
+
+    .fourth-description p {
+        font-size: 1.5em;
+    }
+
+    .fourth-description h1 {
+        font-size: 2.5em;
+    }
+
+    .fourth-button {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 30px;
+        width: 840px;
+        margin-top: 60px;
+    }
+
+    .fourth-button span {
+        font-size: 2em;
+    }
+
+    .fifth-card {
+        width: 900px;
+        height: 1300px;
+    }
+
+    .fifth-card img {
+        height: 900px;
+        width: 900px;
+    }
+
+    .fifth-description {
+        margin-left: 30px;
+        margin-top: 510px;
+    }
+
+    .fifth-description p {
+        font-size: 1.5em;
+    }
+
+    .fifth-description h1 {
+        font-size: 2.5em;
+    }
+
+    .fifth-button {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 30px;
+        width: 840px;
+        margin-top: 30px;
+    }
+
+    .fifth-button span {
+        font-size: 2em;
+    }
+
+    .sixth-card {
+        width: 900px;
+        height: 1300px;
+    }
+
+    .sixth-card img {
+        height: 900px;
+        width: 900px;
+    }
+
+    .sixth-description {
+        margin-left: 30px;
+        margin-top: 510px;
+    }
+
+    .sixth-description p {
+        font-size: 1.5em;
+    }
+
+    .sixth-description h1 {
+        font-size: 2.5em;
+    }
+
+    .sixth-button {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 30px;
+        width: 840px;
+        margin-top: 30px;
+    }
+
+    .sixth-button span {
+        font-size: 2em;
+    }
+
+    .featured-movie, .movie-card, .fourth-card, .fifth-card, .sixth-card {
+        box-shadow: none;
+    }
+}
