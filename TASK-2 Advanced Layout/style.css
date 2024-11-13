@@ -1,16 +1,20 @@
+/* Adding two different font families from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Protest+Guerrilla&family=Teko:wght@300..700&display=swap');
 
+/* Reset all elements to have no margin, padding, and use border-box sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Set dark blue background color for the whole page */
 body {
     background-color: #231651;
 }
 
+/* Styling for the top navigation bar */
 .header {
     display: flex;
     justify-content: space-between;
@@ -23,6 +27,7 @@ body {
     box-shadow: 5px 5px 20px 5px #070410;
 }
 
+/* Styling for the website logo */
 .logo {
     font-family: "Lato", sans-serif;
     font-weight: 450;
@@ -33,6 +38,7 @@ body {
     color: white;
 }
 
+/* Styling for navigation menu items */
 .nav {
     font-family: "Lato", sans-serif;
     font-weight: 500;
@@ -45,6 +51,7 @@ body {
     margin-left: -25px;
 }
 
+/* Style for the search button in the header */
 .search-button {
     padding: 1px 18px;
     background-color: #231651;
@@ -59,6 +66,7 @@ body {
     color: white;
 }
 
+/* Layout settings for the main movie grid */
 .movie-grid {
     display: grid;
     gap: 20px;
@@ -66,6 +74,7 @@ body {
     margin: 0 auto;
 }
 
+/* Styling for the main featured movie section */
 .featured-movie {
     display: grid;
     grid-template-columns: 1fr;
@@ -75,17 +84,20 @@ body {
     color: white;
 }
 
+/* Size settings for the main movie poster */
 .movie-poster {
     height: 910px;
     width: 900px;
 }
 
-img {   /* Adjusting images */
+/* Makes all images cover their containers completely */
+img {
     width: 100%;
     height: 100%;
     object-fit:cover;
 }
 
+/* Styling for all movie titles */
 h1 {
     font-family: "Teko", sans-serif;
     font-optical-sizing: auto;
@@ -93,26 +105,30 @@ h1 {
     font-style: normal;
 }
 
+/* Styling for all movie descriptions */
 p {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/* Specific styling for the featured movie description */
 .movie-description p {
-    display: grid; /* Arranges paragraph content using a grid layout */
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     font-size: 1.5em;
     margin-left: 16px;
     margin-right: 300px;
 }
 
+/* Styling for the featured movie title */
 .movie-description h1 {
     margin-top: 16px;
     font-size: 2.5em;
     margin-left: 16px;
 }
 
+/* Styling for the featured movie's watch button */
 .watch-button {
     background-color: #eef36a;
     margin-left: 620px;
@@ -125,6 +141,7 @@ p {
     box-shadow: 0px 2px 20px 2px #ffffff;
 }
 
+/* Arranges the text inside watch buttons */
 .button-text {
     display: flex;
     flex-direction: column;
@@ -132,16 +149,19 @@ p {
     line-height: 1.2;
 }
 
+/* Adjusts spacing for featured movie content */
 .movie-content {
     margin-bottom: -150px;
 }
 
+/* Layout for the second and third movie posters section */
 .second-third-posters {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 65px;
 }
 
+/* Styling for regular movie cards */
 .movie-card {
     background: #070410;
     box-shadow: 10px 2px 20px 5px #4dccbd;
@@ -150,25 +170,30 @@ p {
     color: white;
 }
 
+/* Size settings for second movie poster */
 .second-poster  {
     height: 415px;
     width: 415px;
 }
 
+/* Styling for second movie description area */
 .second-description {
     margin-top: 16px;
 }
 
+/* Styling for second movie title */
 .second-description h1 {
     font-size: 2.5em;
     margin-left: 16px;
 }
 
+/* Styling for second movie description text */
 .second-description p {
     font-size: 1.5em;
     margin-left: 16px;
 }
 
+/* Styling for second movie watch button */
 .second-button {
     background-color: #eef36a;
     font-size: 2em;
@@ -182,25 +207,30 @@ p {
     margin-left: 16px;
 }
 
+/* Size settings for third movie poster */
 .third-poster  {
     height: 415px;
     width: 415px;
 }
 
+/* Styling for third movie description area */
 .third-description {
     margin-top: 16px;
 }
 
+/* Styling for third movie title */
 .third-description h1 {
     font-size: 2.5em;
     margin-left: 16px;
 }
 
+/* Styling for third movie description text */
 .third-description p {
     font-size: 1.5em;
     margin-left: 16px;
 }
 
+/* Styling for third movie watch button */
 .third-button {
     background-color: #eef36a;
     font-size: 2em;
@@ -214,6 +244,7 @@ p {
     margin-left: 16px;
 }
 
+/* Styling for fourth movie card container */
 .fourth-card{
     background: #070410;
     box-shadow: 10px 2px 20px 5px #4dccbd;
@@ -222,25 +253,30 @@ p {
     color: white;
 }
 
+/* Size settings for fourth movie poster */
 .fourth-poster {
     height: 430px;
     width: 430px;
 }
 
+/* Position and styling for fourth movie description */
 .fourth-description{
     margin-left: 456px;
     margin-top: -410px;
     margin-right: 16px;
 }
 
+/* Styling for fourth movie title */
 .fourth-description h1 {
     font-size: 2.5em;
 }
 
+/* Styling for fourth movie description text */
 .fourth-description p {
     font-size: 1.5em;
 }
 
+/* Styling for fourth movie watch button */
 .fourth-button {
     padding: 18px 110px;
     margin-left: 456px;
@@ -253,6 +289,7 @@ p {
     box-shadow: 0px 2px 20px 2px #ffffff;
 }
 
+/* Styling for fifth movie card container */
 .fifth-card{
     background: #070410;
     box-shadow: 10px 2px 20px 5px #4dccbd;
@@ -261,25 +298,30 @@ p {
     color: white;
 }
 
+/* Size settings for fifth movie poster */
 .fifth-poster {
     height: 430px;
     width: 430px;
 }
 
+/* Position and styling for fifth movie description */
 .fifth-description{
     margin-left: 456px;
     margin-top: -410px;
     margin-right: 16px;
 }
 
+/* Styling for fifth movie title */
 .fourth-description h1 {
     font-size: 2.5em;
 }
 
+/* Styling for fifth movie description text */
 .fifth-description p {
     font-size: 1.5em;
 }
 
+/* Styling for fifth movie watch button */
 .fifth-button {
     padding: 18px 110px;
     margin-left: 456px;
@@ -292,6 +334,7 @@ p {
     box-shadow: 0px 2px 20px 2px #ffffff;
 }
 
+/* Styling for sixth movie card container */
 .sixth-card{
     background: #070410;
     box-shadow: 10px 2px 20px 5px #4dccbd;
@@ -301,25 +344,30 @@ p {
     margin-bottom: 48px;
 }
 
+/* Size settings for sixth movie poster */
 .sixth-poster {
     height: 430px;
     width: 430px;
 }
 
+/* Position and styling for sixth movie description */
 .sixth-description{
     margin-left: 456px;
     margin-top: -410px;
     margin-right: 16px;
 }
 
+/* Styling for sixth movie title */
 .sixth-description h1 {
     font-size: 2.5em;
 }
 
+/* Styling for sixth movie description text */
 .sixth-description p {
     font-size: 1.5em;
 }
 
+/* Styling for sixth movie watch button */
 .sixth-button {
     padding: 18px 110px;
     margin-left: 456px;
@@ -332,7 +380,9 @@ p {
     box-shadow: 0px 2px 20px 2px #ffffff;
 }
 
+/* This style only applies when the screen is at least 1024 pixels wide (Laptops and PC) */
 @media (min-width: 1024px) {
+    /* Styles for the top navigation bar */
     .header {
         display: flex;
         justify-content: space-between;
@@ -345,6 +395,7 @@ p {
         box-shadow: 5px 5px 20px 5px #070410;
     }
     
+    /* Website logo styling */
     .logo {
         font-family: "Lato", sans-serif;
         font-weight: 450;
@@ -355,6 +406,7 @@ p {
         color: white;
     }
     
+    /* Navigation menu styling */
     .nav {
         font-family: "Lato", sans-serif;
         font-weight: 500;
@@ -367,6 +419,7 @@ p {
         margin-left: -25px;
     }
     
+    /* Search button styling */
     .search-button {
         padding: 1px 18px;
         background-color: #231651;
@@ -381,6 +434,7 @@ p {
         color: white;
     }
     
+    /* Layout for the movie grid container */
     .movie-grid {
         display: grid;
         gap: 20px;
@@ -388,6 +442,7 @@ p {
         margin: 0 auto;
     }
 
+    /* Styles for the main featured movie section */
     .featured-movie {
         display: grid;
         grid-template-columns: 1fr;
@@ -397,17 +452,20 @@ p {
         color: white;
     }
     
+    /* Size settings for the main movie poster */
     .movie-poster {
         height: 910px;
         width: 900px;
     }
     
-    img {   /* Adjusting images */
+    /* Makes all images fill their containers properly */
+    img {
         width: 100%;
         height: 100%;
         object-fit:cover;
     }
     
+    /* Heading text style */
     h1 {
         font-family: "Teko", sans-serif;
         font-optical-sizing: auto;
@@ -415,31 +473,35 @@ p {
         font-style: normal;
     }
     
+    /* Paragraph text style */
     p {
         font-family: "Lato", sans-serif;
         font-weight: 400;
         font-style: normal;
     }
     
+    /* Movie description paragraph styling */
     .movie-description p {
-        display: grid; /* Arranges paragraph content using a grid layout */
+        display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         font-size: 1.5em;
         margin-left: 16px;
         margin-right: 300px;
     }
     
+    /* Movie title styling */
     .movie-description h1 {
         margin-top: 16px;
         font-size: 2.5em;
         margin-left: 16px;
     }
     
+    /* Main "Watch" button styling */
     .watch-button {
         background-color: #eef36a;
         margin-left: 620px;
         padding: 48px 60px;
-        position: relative; top: -180px;
+        position: relative; top: -170px;
         font-size: 2em;
         border-radius: 15px;
         color: rgb(0, 0, 0);
@@ -447,6 +509,7 @@ p {
         box-shadow: 0px 2px 20px 2px #ffffff;
     }
     
+    /* Text inside the watch button */
     .button-text {
         display: flex;
         flex-direction: column;
@@ -454,16 +517,19 @@ p {
         line-height: 1.2;
     }
     
+    /* Container for movie content */
     .movie-content {
         margin-bottom: -150px;
     }
     
+    /* Layout for second and third movie posters */
     .second-third-posters {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 65px;
     }
     
+    /* Style for movie cards (second and third movies) */
     .movie-card {
         background: #070410;
         box-shadow: 10px 2px 20px 5px #4dccbd;
@@ -472,25 +538,30 @@ p {
         color: white;
     }
     
+    /* Size for second movie poster */
     .second-poster  {
         height: 415px;
         width: 415px;
     }
     
+    /* Second movie description container */
     .second-description {
         margin-top: 16px;
     }
     
+    /* Second movie title */
     .second-description h1 {
         font-size: 2.5em;
         margin-left: 16px;
     }
     
+    /* Second movie description text */
     .second-description p {
         font-size: 1.5em;
         margin-left: 16px;
     }
     
+    /* Second movie watch button */
     .second-button {
         background-color: #eef36a;
         font-size: 2em;
@@ -504,25 +575,30 @@ p {
         margin-left: 16px;
     }
     
+    /* Size for third movie poster */
     .third-poster  {
         height: 415px;
         width: 415px;
     }
     
+    /* Third movie description container */
     .third-description {
         margin-top: 16px;
     }
     
+    /* Third movie title */
     .third-description h1 {
         font-size: 2.5em;
         margin-left: 16px;
     }
     
+    /* Third movie description text */
     .third-description p {
         font-size: 1.5em;
         margin-left: 16px;
     }
     
+    /* Third movie watch button */
     .third-button {
         background-color: #eef36a;
         font-size: 2em;
@@ -531,11 +607,12 @@ p {
         cursor: pointer;
         box-shadow: 0px 2px 20px 2px #ffffff;
         padding: 16px 16px 16px 16px;
-        margin-top: 48px;
+        position: relative; top: -5px;
         width: 380px;
         margin-left: 16px;
     }
     
+    /* Style for fourth movie card */
     .fourth-card{
         background: #070410;
         box-shadow: 10px 2px 20px 5px #4dccbd;
@@ -544,25 +621,30 @@ p {
         color: white;
     }
     
+    /* Size for fourth movie poster */
     .fourth-poster {
         height: 430px;
         width: 430px;
     }
     
+    /* Fourth movie description container */
     .fourth-description{
         margin-left: 456px;
         margin-top: -410px;
         margin-right: 16px;
     }
     
+    /* Fourth movie title */
     .fourth-description h1 {
         font-size: 2.5em;
     }
     
+    /* Fourth movie description text */
     .fourth-description p {
         font-size: 1.5em;
     }
     
+    /* Fourth movie watch button */
     .fourth-button {
         padding: 18px 110px;
         margin-left: 456px;
@@ -575,6 +657,7 @@ p {
         box-shadow: 0px 2px 20px 2px #ffffff;
     }
     
+    /* Style for fifth movie card */
     .fifth-card{
         background: #070410;
         box-shadow: 10px 2px 20px 5px #4dccbd;
@@ -583,25 +666,30 @@ p {
         color: white;
     }
     
+    /* Size for fifth movie poster */
     .fifth-poster {
         height: 430px;
         width: 430px;
     }
     
+    /* Fifth movie description container */
     .fifth-description{
         margin-left: 456px;
         margin-top: -410px;
         margin-right: 16px;
     }
     
+    /* Fifth movie title */
     .fourth-description h1 {
         font-size: 2.5em;
     }
     
+    /* Fifth movie description text */
     .fifth-description p {
         font-size: 1.5em;
     }
     
+    /* Fifth movie watch button */
     .fifth-button {
         padding: 18px 110px;
         margin-left: 456px;
@@ -614,6 +702,7 @@ p {
         box-shadow: 0px 2px 20px 2px #ffffff;
     }
     
+    /* Style for sixth movie card */
     .sixth-card{
         background: #070410;
         box-shadow: 10px 2px 20px 5px #4dccbd;
@@ -623,25 +712,30 @@ p {
         margin-bottom: 48px;
     }
     
+    /* Size for sixth movie poster */
     .sixth-poster {
         height: 430px;
         width: 430px;
     }
     
+    /* Sixth movie description container */
     .sixth-description{
         margin-left: 456px;
         margin-top: -410px;
         margin-right: 16px;
     }
     
+    /* Sixth movie title */
     .sixth-description h1 {
         font-size: 2.5em;
     }
     
+    /* Sixth movie description text */
     .sixth-description p {
         font-size: 1.5em;
     }
     
+    /* Sixth movie watch button */
     .sixth-button {
         padding: 18px 110px;
         margin-left: 456px;
@@ -655,131 +749,155 @@ p {
     }
 }
 
-
+/* These styles only work on screens between 720px and 1023px wide (tablets) */
 @media (min-width: 720px) and (max-width: 1023px) {
+    /* Make the header wider than normal */
     .header{
         width: 125%;
     }
 
+    /* Make the search button bigger */
     .search-button {
         padding: 10px 25px;
         font-size: 2em;
     }
 
+    /* Style for the main featured movie container */
     .featured-movie {
         width: 400px;
         margin-left: 30px;
         height: 1030px;
     }
 
+    /* Make the movie poster image a perfect square */
     .movie-poster {
         height: 400px;
         width: 400px;
     }
 
+    /* Adjust the space around the movie description text */
     .movie-description {
         margin-right: 150px;
         margin-left: 16px;
         margin-top: 0px;
     }
 
+    /* Make the movie description paragraph text responsive and bigger */
     .movie-description p {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         font-size: 1.5em;
     }
 
+    /* Make the movie title bigger and adjust its position */
     .movie-description h1 {
         font-size: 2.5em;
         margin-right: 316px;
     }
 
+    /* Style the watch button and position it lower on the page */
     .watch-button {
         padding: 16px 55px;
         margin-top: 350px;
         margin-left: 25px;
     }
 
+    /* Make the button text bigger */
     .button-text {
         font-size: 2em;
     }
 
+    /* Style for regular movie cards */
     .movie-card {
         width: 400px;
         height: 1030px;
         margin-left: 30px;
     }
 
+    /* Make movie card images perfect squares */
     .movie-card img {
         width: 400px;
         height: 400px;
     }
 
+    /* Style the buttons inside movie cards */
     .movie-card button {
         padding: 16px;
         height: 180px;
         width: 330px;
     }
 
+    /* Adjust spacing for the second description section */
     .second-description {
         margin-left: 16px;
         margin-right: 16px;
         margin-top: 0px;
     }
 
+    /* Make second description title bigger */
     .second-description h1 {
         font-size: 2.5em;
     }
 
+    /* Adjust spacing for the third description section */
     .third-description {
         margin-left: 16px;
         margin-right: 16px;
         margin-top: 0px;
     }
 
+    /* Position the second button */
     .second-button {
         margin-left: 30px;
         margin-top: 60px;
     }
 
+    /* Position the third button slightly higher than normal */
     .third-button {
         margin-left: 30px;
         position: relative; top: -50px;
     }
 
+    /* Make text inside movie cards bigger */
     .movie-card span {
         font-size: 2em;
     }
 
+    /* Move the second movie card slightly to the left */
     .movie-card:nth-child(2) {
         margin-left: -30px;
     }
 
+    /* Style for the fourth movie card */
     .fourth-card {
         width: 400px;
         height: 1030px;
         margin-left: 467px;
         margin-top: -2100px;
-
     }
 
+    /* Make fourth card image a perfect square */
     .fourth-card img {
         width: 400px;
         height: 400px;
     }
 
+    /* Position the fourth card's description */
     .fourth-description {
         margin-left: 30px;
         margin-top: -10px;
     }
 
+    /* Make fourth card's paragraph text bigger */
     .fourth-description p {
         font-size: 1.5em;
     }
 
+    /* Make fourth card's title bigger */
     .fourth-description h1 {
         font-size: 2.5em;
     }
 
+    /* Style and position the fourth card's button */
     .fourth-button {
         padding: 16px;
         height: 185px;
@@ -788,34 +906,41 @@ p {
         margin-top: 140px;
     }
 
+    /* Make fourth button's text bigger */
     .fourth-button span {
         font-size: 2em;
     }
 
+    /* Style for the fifth movie card */
     .fifth-card {
         width: 400px;
         height: 1030px;
         margin-left: 30px;
     }
 
+    /* Make fifth card image a perfect square */
     .fifth-card img {
         width: 400px;
         height: 400px;
     }
 
+    /* Position the fifth card's description */
     .fifth-description {
         margin-left: 30px;
         margin-top: -10px;
     }
 
+    /* Make fifth card's paragraph text bigger */
     .fifth-description p {
         font-size: 1.5em;
     }
 
+    /* Make fifth card's title bigger */
     .fifth-description h1 {
         font-size: 2.5em;
     }
 
+    /* Style and position the fifth card's button */
     .fifth-button {
         padding: 16px;
         height: 185px;
@@ -824,10 +949,12 @@ p {
         margin-top: 110px;
     }
 
+    /* Make fifth button's text bigger */
     .fifth-button span {
         font-size: 2em;
     }
 
+    /* Style for the sixth movie card */
     .sixth-card {
         width: 400px;
         height: 1030px;
@@ -835,24 +962,29 @@ p {
         margin-top: -1050px;
     }
 
+    /* Make sixth card image a perfect square */
     .sixth-card img {
         width: 400px;
         height: 400px;
     }
 
+    /* Position the sixth card's description */
     .sixth-description {
         margin-left: 30px;
         margin-top: -10px;
     }
 
+    /* Make sixth card's paragraph text bigger */
     .sixth-description p {
         font-size: 1.5em;
     }
 
+    /* Make sixth card's title bigger */
     .sixth-description h1 {
         font-size: 2.5em;
     }
 
+    /* Style and position the sixth card's button */
     .sixth-button {
         padding: 16px;
         height: 185px;
@@ -861,85 +993,103 @@ p {
         margin-top: 90px;
     }
 
+    /* Make sixth button's text bigger */
     .sixth-button span {
         font-size: 2em;
     }
 
+    /* Add a blue-green shadow to all movie cards */
     .featured-movie, .movie-card, .fourth-card, .fifth-card, .sixth-card {
         box-shadow: 10px 5px 20px 1px #4dccbd;
     }
 }
 
+/* This section applies styles to the website when the screen width is between 360px and 719px */
 @media (min-width: 360px) and (max-width: 719px) {
+    /* Hides the navigation menu */
     .nav {
         display: none;
     }
 
+    /* Makes the header 250% wider */
     .header {
         width: 250%;
     }
 
+    /* Increases the logo font size to 2em */
     .logo {
         font-size: 2em;
     }
 
+    /* Increases the search button padding and font size to 2em */
     .search-button {
         padding: 16px 48px;
         font-size: 2em;
     }
 
+     /* Sets the size of the featured movie container to 900px wide and 1300px tall */
     .featured-movie {
         width: 900px;
         height: 1300px;
     }
 
+    /* Sets the size of the movie poster to 900px wide and 900px tall */
     .movie-poster {
         height: 900px;
         width: 900px;
     }
 
+    /* Adds some margin to the movie description */
     .movie-description {
         margin-left: 16px;
         margin-top: 40px;
     }
 
+     /* Adjusts the font size and layout of the movie description text */
     .movie-description p {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         font-size: 1.5em;
         margin-right: 16px;
     }
 
+     /* Increases the font size of the movie title to 2.5em and adds some right margin */
     .movie-description h1 {
         font-size: 2.5em;
         margin-right: 316px;
     }
 
+     /* Increases the padding, margin, and font size of the watch button */
     .watch-button {
         padding: 16px 220px;
         margin-top: 250px;
         margin-left: 20px;
     }
 
+    /* Changing button style */
     .button-text {
         font-size: 2em;
         display: block;
     }
 
+    /* Changes the layout of the second and third movie posters to be displayed in a block */
     .second-third-posters {
         display: block;
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Sets the size of the movie card containers to 900px wide and 1300px tall */
     .movie-card {
         width: 900px;
         height: 1300px;
     }
 
+    /* Sets the size of the movie card images to 900px wide and 900px tall */
     .movie-card img {
         height: 900px;
         width: 900px;
     }
 
+    /* Increases the padding, width, and margin of the movie card buttons */
     .movie-card button {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -948,61 +1098,70 @@ p {
         margin-top: 60px;
     }
 
+    /* Increases the font size of the text inside the movie card buttons to 2em */
     .movie-card span {
         font-size: 2em;
     }
 
+    /* Adds some margin to the second movie description */
     .second-description {
         margin-left: 16px;
         margin-right: 16px;
         margin-top: 520px;
     }
 
+    /* Increases the font size of the second movie description title to 2.5em */
     .second-description h1 {
         font-size: 2.5em;
     }
 
+    /* Increases the font size of the second movie description text to 1.5em */
     .second-description p {
         font-size: 1.5em;
     }
 
+    /* Adds some margin-top to the second movie card */
     .movie-card:nth-child(2) {
         margin-top: 20px;
     }
 
+    /* Adds some margin to the third movie description and positions the third button above it */
     .third-description {
         margin-left: 16px;
         margin-right: 16px;
         margin-top: 520px;
     }
-
     .third-button {
         position: relative; top: -80px;
     }
 
+    /* Sets the size of the fourth movie card container to 900px wide and 1300px tall */
     .fourth-card {
         width: 900px;
         height: 1300px;
     }
 
+    /* Sets the size of the fourth movie card image to 900px wide and 900px tall */
     .fourth-card img {
         height: 900px;
         width: 900px;
     }
 
+    /* Adds some margin to the fourth movie description */
     .fourth-description {
         margin-left: 30px;
         margin-top: 510px;
     }
 
+    /* Increases the font size of the fourth movie description text to 1.5em and the title to 2.5em */
     .fourth-description p {
         font-size: 1.5em;
     }
-
     .fourth-description h1 {
         font-size: 2.5em;
     }
 
+    /* Increases the padding, width, and margin of the fourth movie card button */
     .fourth-button {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -1010,34 +1169,37 @@ p {
         width: 840px;
         margin-top: 60px;
     }
-
     .fourth-button span {
         font-size: 2em;
     }
 
+    /* Sets the size of the fifth movie card container to 900px wide and 1300px tall */
     .fifth-card {
         width: 900px;
         height: 1300px;
     }
 
+    /* Sets the size of the fifth movie card image to 900px wide and 900px tall */
     .fifth-card img {
         height: 900px;
         width: 900px;
     }
 
+    /* Adds some margin to the fifth movie description */
     .fifth-description {
         margin-left: 30px;
         margin-top: 510px;
     }
 
+    /* Increases the font size of the fifth movie description text to 1.5em and the title to 2.5em */
     .fifth-description p {
         font-size: 1.5em;
     }
-
     .fifth-description h1 {
         font-size: 2.5em;
     }
 
+    /* Increases the padding, width, and margin of the fifth movie card button */
     .fifth-button {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -1045,34 +1207,37 @@ p {
         width: 840px;
         margin-top: 30px;
     }
-
     .fifth-button span {
         font-size: 2em;
     }
 
+    /* Sets the size of the sixth movie card container to 900px wide and 1300px tall */
     .sixth-card {
         width: 900px;
         height: 1300px;
     }
 
+    /* Sets the size of the sixth movie card image to 900px wide and 900px tall */
     .sixth-card img {
         height: 900px;
         width: 900px;
     }
 
+    /* Adds some margin to the sixth movie description */
     .sixth-description {
         margin-left: 30px;
         margin-top: 510px;
     }
 
+    /* Increases the font size of the sixth movie description text to 1.5em and the title to 2.5em */
     .sixth-description p {
         font-size: 1.5em;
     }
-
     .sixth-description h1 {
         font-size: 2.5em;
     }
 
+    /* Increases the padding, width, and margin of the sixth movie card button */
     .sixth-button {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -1080,11 +1245,11 @@ p {
         width: 840px;
         margin-top: 30px;
     }
-
     .sixth-button span {
         font-size: 2em;
     }
 
+    /* Removes the box shadow from the featured movie, movie cards, and other elements */
     .featured-movie, .movie-card, .fourth-card, .fifth-card, .sixth-card {
         box-shadow: none;
     }
