@@ -1,32 +1,45 @@
+<!-- This tells browsers this is an HTML document -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- This section contains information about the webpage that isn't visible -->
     <meta charset="UTF-8">
+    <!-- This makes the website look good on phones and tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is the text that appears in the browser tab -->
     <title>Watch.It</title>
+    <!-- This connects to a separate file that controls how the page looks -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- This is the top bar of the website -->
     <header class="header">
+        <!-- Website name/logo -->
         <div class="logo">watch.it</div>
+        <!-- Menu with movie categories -->
         <nav class="nav">
             <span>Action</span>
             <span>Comedy</span>
             <span>Romance</span>
             <span>Drama</span>
         </nav>
+        <!-- Search button in the top right -->
         <button class="search-button">SEARCH</button>
     </header>
 
+    <!-- Main content area where all movies are displayed -->
     <main class="movie-grid">
-        <!-- Featured Movie -->
+        <!-- Big featured movie section at the top -->
         <div class="featured-movie">
+            <!-- Movie poster image -->
             <div class="movie-poster"><img src="Images/palm-springs.jpg" alt="Featured image"></div>
+            <!-- Movie information -->
             <div class="movie-content">
                 <div class="movie-description">
                     <h1>Palm Springs (2020)</h1>
                     <p>A never-ending wedding day turns into an unforgettable time-loop romance! Stuck in the same day, two strangers find love, chaos, and meaning in the most unexpected ways.</p>
                </div>
+                <!-- Watch button for the featured movie -->
                 <button class="watch-button">
                     <div class="button-text">
                         <span>WATCH</span>
@@ -36,58 +49,79 @@
             </div>
         </div>
 
+        <!-- Section containing two movies side by side -->
         <section class="second-third-posters">
+            <!-- First movie card -->
             <div class="movie-card">
-            <div class="second-poster"><img src="Images/who-framed-roger-rabbit.jpg" alt="Row-image"></div>
-            <div class="second-description">
-                <h1>Who Framed Roger Rabbit (1988)</h1>
-                <p>In a world where cartoons and humans coexist, a detective must solve a zany, high-stakes mystery. Packed with wild humor, groundbreaking animation, and noir twists, this unique film will pull you into a world where anything is possible!</p>
+                <!-- Movie poster -->
+                <div class="second-poster"><img src="Images/who-framed-roger-rabbit.jpg" alt="Row-image"></div>
+                <!-- Movie details -->
+                <div class="second-description">
+                    <h1>Who Framed Roger Rabbit (1988)</h1>
+                    <p>In a world where cartoons and humans coexist, a detective must solve a zany, high-stakes mystery. Packed with wild humor, groundbreaking animation, and noir twists, this unique film will pull you into a world where anything is possible!</p>
+                </div>
+                <!-- Watch button -->
+                <button class="second-button">
+                    <span>WATCH NOW</span>
+                </button>
             </div>
-            <button class="second-button">
-                <span>WATCH NOW</span>
-            </button>
-        </div>
 
-        <div class="movie-card">
-            <div class="third-poster"><img src="Images/hook.jpg" alt="Row-image"></div>
-            <div class="third-description">
-                <h1>Hook (1991)</h1>
-                <p style="margin-right: 16px;">Rediscover Neverland in this thrilling twist on Peter Pan! Robin Williams stars as a grown-up Peter, who must rediscover his inner child to rescue his kids from the clutches of Captain Hook. Adventure, magic, and nostalgia blend in this timeless family classic.</p>
+            <!-- Second movie card -->
+            <div class="movie-card">
+                <!-- Movie poster -->
+                <div class="third-poster"><img src="Images/hook.jpg" alt="Row-image"></div>
+                <!-- Movie details -->
+                <div class="third-description">
+                    <h1>Hook (1991)</h1>
+                    <p style="margin-right: 16px;">Rediscover Neverland in this thrilling twist on Peter Pan! Robin Williams stars as a grown-up Peter, who must rediscover his inner child to rescue his kids from the clutches of Captain Hook. Adventure, magic, and nostalgia blend in this timeless family classic.</p>
+                </div>
+                <!-- Watch button -->
+                <button class="third-button" style="margin-top: 110px;">
+                    <span>WATCH NOW</span>
+                </button>
             </div>
-            <button class="third-button" style="margin-top: 110px;">
-                <span>WATCH NOW</span>
-            </button>
-        </div>
         </section>
 
+        <!-- Fourth movie card -->
         <div class="fourth-card">
-        <div class="fourth-poster"><img src="Images/la-la-land.jpg" alt="land"></div>
-        <div class="fourth-description">
-            <h1>La La Land (2016)</h1>
-            <p>Love, dreams, and the magic of LA take center stage in this musical masterpiece. Watch as two starry-eyed artists navigate passion and ambition in a world where every moment feels like a cinematic spectacle!</p>
-        </div>
-        <button class="fourth-button">
-            <span>WATCH NOW</span>
-        </button>
+            <!-- Movie poster -->
+            <div class="fourth-poster"><img src="Images/la-la-land.jpg" alt="land"></div>
+            <!-- Movie details -->
+            <div class="fourth-description">
+                <h1>La La Land (2016)</h1>
+                <p>Love, dreams, and the magic of LA take center stage in this musical masterpiece. Watch as two starry-eyed artists navigate passion and ambition in a world where every moment feels like a cinematic spectacle!</p>
+            </div>
+            <!-- Watch button -->
+            <button class="fourth-button">
+                <span>WATCH NOW</span>
+            </button>
         </div>
 
+        <!-- Fifth movie card -->
         <div class="fifth-card">
+            <!-- Movie poster -->
             <div class="fifth-poster"><img src="Images/barbie.jpg" alt="barbie"></div>
+            <!-- Movie details -->
             <div class="fifth-description">
                 <h1>Barbie (2023)</h1>
                 <p>Step into the dazzling world of Barbie as she embarks on an unexpected journey from her perfect doll life to the real world. Filled with humor, heart, and empowering messages, this vibrant adventure redefines what it means to dream big!</p>
             </div>
+            <!-- Watch button -->
             <button class="fifth-button">
                 <span>WATCH NOW</span>
             </button>
         </div>
 
+        <!-- Sixth movie card -->
         <div class="sixth-card">
+            <!-- Movie poster -->
             <div class="sixth-poster"><img src="Images/hidden-figures.jpg" alt="hidden"></div>
+            <!-- Movie details -->
             <div class="sixth-description">
                 <h1>Hidden Figures (2016)</h1>
                 <p>Three unsung heroes of NASA's space race take the spotlight in this inspiring true story. Battling discrimination and defying the odds, these brilliant African-American women prove that intelligence, perseverance, and unity can change history and break barriers.</p>
             </div>
+            <!-- Watch button -->
             <button class="sixth-button">
                 <span>WATCH NOW</span>
             </button>
