@@ -1,0 +1,125 @@
+body {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-left: 210px;
+    background-color: black;
+}
+
+/* Animation 1: Fade in */
+.img1 {
+    animation: fadeIn 2s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation 2: Slide in from left */
+  .img2 {
+    animation: slideInLeft 2s;
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animation 3: Rotate */
+  .img3 {
+    animation: rotate 2s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Animation 4: Zoom in */
+  .img4 {
+    animation: zoomIn 2s;
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Animation 5: Fade out and in */
+  .img5 {
+    animation: fadeOutIn 2s;
+  }
+  
+  @keyframes fadeOutIn {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Animation 6: Slide in from top */
+  .img6 {
+    animation: slideInTop 2s;
+  }
+  
+  @keyframes slideInTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation 7: Bounce */
+  .img7 {
+    animation: bounce 2s;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation 8: Spin */
+  .img8 {
+    animation: spin 2s;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
